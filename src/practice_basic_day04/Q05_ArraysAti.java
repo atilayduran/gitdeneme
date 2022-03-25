@@ -2,14 +2,14 @@ package practice_basic_day04;
 
 import java.util.Scanner;
 
-public class Q05_Arrays {
+public class Q05_ArraysAti {
     public static void main(String[] args) {
        /*
          Kullanicidan aldigimiz 8 elemanli arrayin icinde
          kac tane 3 e bolunebilen sayi vardir ?(negatif sayilar da dahil olsun)
         */
 
-        int[] arr = new int[8];
+        int[] arr = new int[8];//[15,0,0,0,0,0,0,0]
         Scanner scan = new Scanner(System.in);
 
         for (int i = 0; i < arr.length; i++) {
@@ -26,6 +26,6 @@ public class Q05_Arrays {
         }
 
         System.out.println("3 ile bolunebilen sayi :" + count);
-        scan.close();
+
     }
 }
