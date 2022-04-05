@@ -12,16 +12,10 @@ public class Q02_NestedTernary {
 
     public static void main(String[] args) {
 
-        char finalNotu = 'B';
+        char not='C';
 
-        // String result ="";
+                String sonuc = not=='A'?"gayet basarili":not=='B'?"basarili":not=='C'?"ha gayret":"hatali giris";
 
-        String result = (finalNotu == 'A') ? "Gayet Basarili" :
-                (finalNotu == 'B') ? "Basarili" :
-                        (finalNotu == 'C') ? "Ha gayret" : "Digerleri..";
-
-        System.out.println("result = " + result);
-
-
+        System.out.println(sonuc);
     }
 }

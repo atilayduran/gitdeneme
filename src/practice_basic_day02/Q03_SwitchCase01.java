@@ -17,27 +17,17 @@ public class Q03_SwitchCase01 {
 */
     public static void main(String[] args) {
 
-        String day = "Friday";
 
-        switch (day) {
-            case "Monday":
-            case "Tuesday":
-                System.out.println("Java class");
+        String gun = "pazartesi";
+gun=gun.toUpperCase();
+
+        switch (gun) {
+
+            case "PAZARTESI":
+            case"sali":
+                System.out.println("selenium gunleri");
                 break;
-
-            case "Wednesday":
-            case "Saturday":
-                System.out.println("SQL");
-                break;
-
-            case "Friday":
-            case "Thursday":
-                System.out.println("Selenium");
-                break;
-
-            default:
-                System.out.println("Day off");
-
         }
     }
+
 }

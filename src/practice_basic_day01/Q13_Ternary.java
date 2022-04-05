@@ -1,5 +1,7 @@
 package practice_basic_day01;
 
+import java.util.Scanner;
+
 public class Q13_Ternary {
     /*
      * Ternary kullanarak bir kod yazin. fiyat isminde bir variable tanimlayin. eger fiyat
@@ -8,18 +10,13 @@ public class Q13_Ternary {
      */
     public static void main(String[] args) {
 
-        int fiyat = 10 ;
+      Scanner scanner = new Scanner(System.in);
+        System.out.println("fiyat giriniz");
+        int fiyat= scanner.nextInt();
 
-        String sonuc = (fiyat < 10) ? "ucuz" : fiyat < 20 ? "normal" : "pahali";
+        String sonuc = fiyat<10?"ucuz":fiyat<20?"normal":"pahali";
 
         System.out.println(sonuc);
-
-
-        if (fiyat<10){
-            System.out.println("ucuz");
-        }else if (fiyat>=10 && fiyat<20){
-            System.out.println("normal");
-        }else System.out.println("pahali");
 
     }
 }

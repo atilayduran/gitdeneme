@@ -1,5 +1,7 @@
 package practice_basic_day01;
 
+import java.util.Scanner;
+
 public class Q11_IfStatement02 {
     /*
     not hesaplayici
@@ -10,26 +12,23 @@ public class Q11_IfStatement02 {
 		   	F =>  0 ~ 59
      */
     public static void main(String[] args) {
-        int grade = 85;
 
-        if( grade >= 90 && grade <= 100) { // 90, 91 ..... 99
-            System.out.println("You  made A, Great job");
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("lutfen not giriniz ve harf karsiligini al");
+        Scanner scan;
+        int sayi = scanner.nextInt();
 
-        else if( grade <90 && grade >= 80) { // 80, 81, 82...89
-            System.out.println("You made B, Good");
-        }
+        if (sayi>=90){
+            System.out.println("A");
+        }else if (sayi>=80){
+            System.out.println("B");
+        }else if (sayi>=70){
+            System.out.println("C");
+        }else if (sayi>=60) {
+            System.out.println("D");
+        }else if (sayi<60&& sayi>=0) {
+            System.out.println("F");
 
-        else if(grade < 80 && grade >= 70 ) {  // 70, 71 ,... 79
-            System.out.println("You made C, That's Okay");
+        }else System.out.println("hatali giris yaptiinz");
         }
-
-        else if ( grade <70 && grade >=60) {  // 60, 61 ,.. 69
-            System.out.println("You made D, Really?");
-        }
-        else {
-            System.out.println("You made F, Study more");
-        }
-    }
-
 }
