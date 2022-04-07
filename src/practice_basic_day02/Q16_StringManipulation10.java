@@ -7,11 +7,6 @@ public class Q16_StringManipulation10 {
     public static void main(String[] args) {
 
 
-        String str1 = " Java ogrenmek123 Cok guzel@ ";
-
-
-//              ___1____    ________________2________-_________    ___________________3___________     __________________4______________    ____________5_______________      _______________6______________
-        str1 = str1.trim().replaceAll("\\d", "").replace(" " , "x").replaceAll("\\W", "").replace("x", " ").replace("C", "c");
 
 
         // 1    once cumlenin basindaki ve sonundaki bosluklardan trim() kullanarak kurtulduk.
@@ -21,8 +16,11 @@ public class Q16_StringManipulation10 {
         // 5    replace("x", " ") ile x ile bosluk karakterini degistirip eski haline cevirdik.
         // 6    en son olarak replace("C", "c") ile buyuk C harfini kucuk C ile degistirdik.
 
+String str="   Java ogrenmek123 Cok guzel@      ";
 
-        System.out.print(str1); //Java ogrenmek cok guzel
+        System.out.println(str.trim().replaceAll("\\d","").replaceAll(" ","x")
+                .replaceAll("\\W","").replaceAll("x"," ").replace("C","c"));
+
 
     }
 }

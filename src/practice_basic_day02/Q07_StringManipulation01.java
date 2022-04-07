@@ -10,14 +10,10 @@ public class Q07_StringManipulation01 {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your first name and last name :");
-        String firstname = scan.nextLine(),
-                lastname = scan.nextLine();  //multiple declarations, bu sekilde kullanim uygulanabilir
-        String fullname = firstname.concat(" "+lastname).toUpperCase();
+        String firstname = scan.nextLine().toUpperCase(),
+                lastname = scan.nextLine().toUpperCase();  //multiple declarations, bu sekilde kullanim uygulanabilir
 
-        String name ="Techproeducation".concat(String.valueOf(12));   // concat(String.valueOf(12) yerine concat(12); olmaz
-        // concat method sadece String variable ya da String value ile kullanilir
-
-        System.out.println("your full name is: "+fullname);
+        System.out.println(firstname+ " "+ lastname);
 
 
 
@@ -25,6 +21,15 @@ public class Q07_StringManipulation01 {
         // 1.yol: concat() function ile concatenate string1 and string2
         // 2.yol: operator kullanarak concatenate string1 and string2
         // konsolda yazdiriniz
+
+        String string1 ="01234";
+        String string2 ="56564";
+
+        System.out.println(string1.concat(string2));
+        System.out.println(string1+string2);
+
+
+
 
     }
 }

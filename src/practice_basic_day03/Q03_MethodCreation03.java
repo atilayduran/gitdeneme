@@ -12,15 +12,18 @@ public class Q03_MethodCreation03 {
         System.out.println("Please enter the value to convert meters and kilometers :");
         double sentiMeter = scan.nextDouble();
 
-        convertSM(sentiMeter);
-    }
 
-    public static void convertSM(double num) {
-        double meter = num / 100;
-        double kMeter = num / 100000;
-        System.out.println("Your " + num + " sentimeter " + "is equal to " + meter + " Meters " + "and "
-                + kMeter + " kilometers");
+        donusturucu(sentiMeter);
+
 
     }
 
+    private static void donusturucu(double sentiMeter) {
+
+        double metre=sentiMeter*100;
+        double km=sentiMeter*100000;
+        System.out.println(sentiMeter+ "="+ metre + "metre");
+        System.out.println(sentiMeter+ "="+ km + "kilometre");
+
+    }
 }
